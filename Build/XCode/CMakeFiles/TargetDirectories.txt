@@ -1,0 +1,6 @@
+/Users/m_lukyanov/GameDev/LIBS/freetype/Build/XCode/CMakeFiles/install.dir
+/Users/m_lukyanov/GameDev/LIBS/freetype/Build/XCode/CMakeFiles/package.dir
+/Users/m_lukyanov/GameDev/LIBS/freetype/Build/XCode/CMakeFiles/dist.dir
+/Users/m_lukyanov/GameDev/LIBS/freetype/Build/XCode/CMakeFiles/freetype.dir
+/Users/m_lukyanov/GameDev/LIBS/freetype/Build/XCode/CMakeFiles/ALL_BUILD.dir
+/Users/m_lukyanov/GameDev/LIBS/freetype/Build/XCode/CMakeFiles/ZERO_CHECK.dir

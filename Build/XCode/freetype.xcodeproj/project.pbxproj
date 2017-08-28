@@ -1,0 +1,1935 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		203E92CDC4A94D6DBA6CD85D /* dist */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 8F3ACBBFA4E746EB854DE53A /* Build configuration list for PBXAggregateTarget "dist" */;
+			buildPhases = (
+				4A78C625FB7145E8AC291EA3 /* CMake Rules */,
+			);
+			dependencies = (
+				DC728CE8492B4D44B5003F59 /* PBXTargetDependency */,
+			);
+			name = dist;
+			productName = dist;
+		};
+		37D6E98FCB7E47FA909A2193 /* package */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 493AB200A6CC436295A022CF /* Build configuration list for PBXAggregateTarget "package" */;
+			buildPhases = (
+				98911BF7E183408D9DA3374B /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				E06B7E76DC754B5489CEA4D4 /* PBXTargetDependency */,
+			);
+			name = package;
+			productName = package;
+		};
+		D1A4FAD115C2498D9F0E44D4 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = BB9B3B7C9FF145E0BCEA39D6 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				51FB37F2F5F9457B945FF5D6 /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		DC906366CFD2462E8EEB7FA6 /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 21B7C102CA644710BC92C093 /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				6730409B02D8488B99DD5DE8 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				127F2019DAEF44BAAC9C39CF /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+		F7ADA5307CDE47588A5E8F99 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 561C7AFF238B4AD0BA18C578 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				A1227875B46747FE98637771 /* CMake Rules */,
+			);
+			dependencies = (
+				2394EC0373564965B17FEE2B /* PBXTargetDependency */,
+				354A77E19920439B9874B873 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		11BCB7C3EFFB4F229BA0D526 /* ftlcdfil.c in Sources */ = {isa = PBXBuildFile; fileRef = E1BB65BE3F364801AD21F83B /* ftlcdfil.c */; };
+		12FB2C0074B74A79A1EE0B36 /* ftbase.c in Sources */ = {isa = PBXBuildFile; fileRef = 7A2913BF40CB40F384EA8065 /* ftbase.c */; };
+		130950E139EA43E5AB337224 /* ftstroke.c in Sources */ = {isa = PBXBuildFile; fileRef = A53A740FFFDC42A4A94EDC3A /* ftstroke.c */; };
+		135657F841A84604BA69C752 /* ftbzip2.c in Sources */ = {isa = PBXBuildFile; fileRef = 0FFB9A36341D4503945C4D07 /* ftbzip2.c */; };
+		14465C2174284CDC8AC271AB /* pfr.c in Sources */ = {isa = PBXBuildFile; fileRef = 29D578B3023343B7B6EA666D /* pfr.c */; };
+		1A0FD91DD89449059CFEA159 /* type1.c in Sources */ = {isa = PBXBuildFile; fileRef = CC29E0E7951743968131F701 /* type1.c */; };
+		1C30498586AB4B34BE35E9FA /* pshinter.c in Sources */ = {isa = PBXBuildFile; fileRef = 414B09DC44E9481DBD3B6D1A /* pshinter.c */; };
+		258899F461AF4F4796EC263B /* ftinit.c in Sources */ = {isa = PBXBuildFile; fileRef = 99EBE4080D8E4570BC765953 /* ftinit.c */; };
+		26F3ECC3DC79456A9A104ABB /* ftlzw.c in Sources */ = {isa = PBXBuildFile; fileRef = BE7DBFCEF1914BCB9E7A0598 /* ftlzw.c */; };
+		2AA26E90700348008FA2363D /* ftbitmap.c in Sources */ = {isa = PBXBuildFile; fileRef = B8C35724DB8E4197ABCEDFE8 /* ftbitmap.c */; };
+		34F43196214F415489251CB1 /* sfnt.c in Sources */ = {isa = PBXBuildFile; fileRef = BECFBDC52FBC415D9536D3EE /* sfnt.c */; };
+		360A0F4DD3BC4F688CF2AC9F /* truetype.c in Sources */ = {isa = PBXBuildFile; fileRef = AEC642A691464DB8821F1AC5 /* truetype.c */; };
+		3A42CDFA0B504DD98FF0137F /* pcf.c in Sources */ = {isa = PBXBuildFile; fileRef = 4F33C7875E2548358FCBCF77 /* pcf.c */; };
+		3B0A771D96264B3D81F90A5B /* cff.c in Sources */ = {isa = PBXBuildFile; fileRef = C254534AA696462EB55EBC72 /* cff.c */; };
+		3F6BA54492724E3BAD99D911 /* ftcache.c in Sources */ = {isa = PBXBuildFile; fileRef = 6E8CD985F1224293BFB47B1A /* ftcache.c */; };
+		4144813841FC414EA20C8ACB /* ftdebug.c in Sources */ = {isa = PBXBuildFile; fileRef = 2AE8192BD7B24B379A65EA35 /* ftdebug.c */; };
+		4B57B2DDEB3D4E96908E795B /* psnames.c in Sources */ = {isa = PBXBuildFile; fileRef = CA7166D24534489B8EA858A0 /* psnames.c */; };
+		5845F9217BE9428D9CEA1099 /* ftgasp.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BA9A7AE2BF549C49ABE34BE /* ftgasp.c */; };
+		58E9F3A62A064C48AA579344 /* autofit.c in Sources */ = {isa = PBXBuildFile; fileRef = 375C853584E7485D93139935 /* autofit.c */; };
+		5A75CBF5EA9C44C5AA0D2C7F /* bdf.c in Sources */ = {isa = PBXBuildFile; fileRef = 7F3DE6AD08B94EA4A1029502 /* bdf.c */; };
+		718DFA5DB7AD4D89960DA460 /* type1cid.c in Sources */ = {isa = PBXBuildFile; fileRef = 6C849E1D3DBE452CBA65813C /* type1cid.c */; };
+		83CAB96BF7284C8AAF5AF42D /* ftgxval.c in Sources */ = {isa = PBXBuildFile; fileRef = 0CCF512F92B94DA09D6BAEBB /* ftgxval.c */; };
+		865107CD14F7459E916B64D8 /* ftfntfmt.c in Sources */ = {isa = PBXBuildFile; fileRef = 1E872FF456A74531A0133C7F /* ftfntfmt.c */; };
+		8878487732754086A6B5C3CA /* fttype1.c in Sources */ = {isa = PBXBuildFile; fileRef = 7AFC1A54019C45449E2B243C /* fttype1.c */; };
+		8E914672E1F44A2C93A80637 /* ftsystem.c in Sources */ = {isa = PBXBuildFile; fileRef = BFE9AD189BAF4F0E9D3F032B /* ftsystem.c */; };
+		91C71F35148A4B8F813E16BB /* ftgzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 882F01192C97472BAB5EA122 /* ftgzip.c */; };
+		96ADC3C3AE7943C49ABEAA9D /* smooth.c in Sources */ = {isa = PBXBuildFile; fileRef = 549FEEEC51964117B772AD18 /* smooth.c */; };
+		9D32A3ED1F5435CF006E61F1 /* autofit.c in Sources */ = {isa = PBXBuildFile; fileRef = 375C853584E7485D93139935 /* autofit.c */; };
+		9D32A3EE1F5435CF006E61F1 /* ftbase.c in Sources */ = {isa = PBXBuildFile; fileRef = 7A2913BF40CB40F384EA8065 /* ftbase.c */; };
+		9D32A3EF1F5435CF006E61F1 /* ftbbox.c in Sources */ = {isa = PBXBuildFile; fileRef = E00E70EE421143B88B911957 /* ftbbox.c */; };
+		9D32A3F01F5435CF006E61F1 /* ftbdf.c in Sources */ = {isa = PBXBuildFile; fileRef = 67F3B837D8BC45CE8828C7EA /* ftbdf.c */; };
+		9D32A3F11F5435CF006E61F1 /* ftbitmap.c in Sources */ = {isa = PBXBuildFile; fileRef = B8C35724DB8E4197ABCEDFE8 /* ftbitmap.c */; };
+		9D32A3F21F5435CF006E61F1 /* ftcid.c in Sources */ = {isa = PBXBuildFile; fileRef = 9EFEA86B066B427FB0BB43FE /* ftcid.c */; };
+		9D32A3F31F5435CF006E61F1 /* ftdebug.c in Sources */ = {isa = PBXBuildFile; fileRef = 2AE8192BD7B24B379A65EA35 /* ftdebug.c */; };
+		9D32A3F41F5435CF006E61F1 /* ftfntfmt.c in Sources */ = {isa = PBXBuildFile; fileRef = 1E872FF456A74531A0133C7F /* ftfntfmt.c */; };
+		9D32A3F51F5435CF006E61F1 /* ftfstype.c in Sources */ = {isa = PBXBuildFile; fileRef = B5F5A536E66C4E4A862BC3A8 /* ftfstype.c */; };
+		9D32A3F61F5435CF006E61F1 /* ftgasp.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BA9A7AE2BF549C49ABE34BE /* ftgasp.c */; };
+		9D32A3F71F5435CF006E61F1 /* ftglyph.c in Sources */ = {isa = PBXBuildFile; fileRef = 8D65ABC0F95844D39A0AEFA5 /* ftglyph.c */; };
+		9D32A3F81F5435CF006E61F1 /* ftgxval.c in Sources */ = {isa = PBXBuildFile; fileRef = 0CCF512F92B94DA09D6BAEBB /* ftgxval.c */; };
+		9D32A3F91F5435CF006E61F1 /* ftinit.c in Sources */ = {isa = PBXBuildFile; fileRef = 99EBE4080D8E4570BC765953 /* ftinit.c */; };
+		9D32A3FA1F5435CF006E61F1 /* ftlcdfil.c in Sources */ = {isa = PBXBuildFile; fileRef = E1BB65BE3F364801AD21F83B /* ftlcdfil.c */; };
+		9D32A3FB1F5435CF006E61F1 /* ftmm.c in Sources */ = {isa = PBXBuildFile; fileRef = CA26EB6E2B2B432AAB1D9318 /* ftmm.c */; };
+		9D32A3FC1F5435CF006E61F1 /* ftotval.c in Sources */ = {isa = PBXBuildFile; fileRef = 2EF5A501B71E41DB89851175 /* ftotval.c */; };
+		9D32A3FD1F5435CF006E61F1 /* ftpatent.c in Sources */ = {isa = PBXBuildFile; fileRef = 00A9CBD6E5384DE7B19CF84A /* ftpatent.c */; };
+		9D32A3FE1F5435CF006E61F1 /* ftpfr.c in Sources */ = {isa = PBXBuildFile; fileRef = 19509AE6FAD24AFFB405745E /* ftpfr.c */; };
+		9D32A3FF1F5435CF006E61F1 /* ftstroke.c in Sources */ = {isa = PBXBuildFile; fileRef = A53A740FFFDC42A4A94EDC3A /* ftstroke.c */; };
+		9D32A4001F5435CF006E61F1 /* ftsynth.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B40E3EF310E46FDB36D0914 /* ftsynth.c */; };
+		9D32A4011F5435CF006E61F1 /* ftsystem.c in Sources */ = {isa = PBXBuildFile; fileRef = BFE9AD189BAF4F0E9D3F032B /* ftsystem.c */; };
+		9D32A4021F5435CF006E61F1 /* fttype1.c in Sources */ = {isa = PBXBuildFile; fileRef = 7AFC1A54019C45449E2B243C /* fttype1.c */; };
+		9D32A4031F5435CF006E61F1 /* ftwinfnt.c in Sources */ = {isa = PBXBuildFile; fileRef = 1678EA3EE7F44E6DB7367258 /* ftwinfnt.c */; };
+		9D32A4041F5435CF006E61F1 /* bdf.c in Sources */ = {isa = PBXBuildFile; fileRef = 7F3DE6AD08B94EA4A1029502 /* bdf.c */; };
+		9D32A4051F5435CF006E61F1 /* ftbzip2.c in Sources */ = {isa = PBXBuildFile; fileRef = 0FFB9A36341D4503945C4D07 /* ftbzip2.c */; };
+		9D32A4061F5435CF006E61F1 /* ftcache.c in Sources */ = {isa = PBXBuildFile; fileRef = 6E8CD985F1224293BFB47B1A /* ftcache.c */; };
+		9D32A4071F5435CF006E61F1 /* cff.c in Sources */ = {isa = PBXBuildFile; fileRef = C254534AA696462EB55EBC72 /* cff.c */; };
+		9D32A4081F5435CF006E61F1 /* type1cid.c in Sources */ = {isa = PBXBuildFile; fileRef = 6C849E1D3DBE452CBA65813C /* type1cid.c */; };
+		9D32A4091F5435CF006E61F1 /* ftgzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 882F01192C97472BAB5EA122 /* ftgzip.c */; };
+		9D32A40A1F5435CF006E61F1 /* ftlzw.c in Sources */ = {isa = PBXBuildFile; fileRef = BE7DBFCEF1914BCB9E7A0598 /* ftlzw.c */; };
+		9D32A40B1F5435CF006E61F1 /* pcf.c in Sources */ = {isa = PBXBuildFile; fileRef = 4F33C7875E2548358FCBCF77 /* pcf.c */; };
+		9D32A40C1F5435CF006E61F1 /* pfr.c in Sources */ = {isa = PBXBuildFile; fileRef = 29D578B3023343B7B6EA666D /* pfr.c */; };
+		9D32A40D1F5435CF006E61F1 /* psaux.c in Sources */ = {isa = PBXBuildFile; fileRef = DC6DE4232D9E4DFEA8C2BA5C /* psaux.c */; };
+		9D32A40E1F5435CF006E61F1 /* pshinter.c in Sources */ = {isa = PBXBuildFile; fileRef = 414B09DC44E9481DBD3B6D1A /* pshinter.c */; };
+		9D32A40F1F5435CF006E61F1 /* psnames.c in Sources */ = {isa = PBXBuildFile; fileRef = CA7166D24534489B8EA858A0 /* psnames.c */; };
+		9D32A4101F5435CF006E61F1 /* raster.c in Sources */ = {isa = PBXBuildFile; fileRef = 72FF0314C11345A199099EC6 /* raster.c */; };
+		9D32A4111F5435CF006E61F1 /* sfnt.c in Sources */ = {isa = PBXBuildFile; fileRef = BECFBDC52FBC415D9536D3EE /* sfnt.c */; };
+		9D32A4121F5435CF006E61F1 /* smooth.c in Sources */ = {isa = PBXBuildFile; fileRef = 549FEEEC51964117B772AD18 /* smooth.c */; };
+		9D32A4131F5435CF006E61F1 /* truetype.c in Sources */ = {isa = PBXBuildFile; fileRef = AEC642A691464DB8821F1AC5 /* truetype.c */; };
+		9D32A4141F5435CF006E61F1 /* type1.c in Sources */ = {isa = PBXBuildFile; fileRef = CC29E0E7951743968131F701 /* type1.c */; };
+		9D32A4151F5435CF006E61F1 /* type42.c in Sources */ = {isa = PBXBuildFile; fileRef = 05C00DB4256446978A0182D8 /* type42.c */; };
+		9D32A4161F5435CF006E61F1 /* winfnt.c in Sources */ = {isa = PBXBuildFile; fileRef = 0B9CBD87AA504B618AE91E19 /* winfnt.c */; };
+		A2938022D9B74297B024571A /* ftotval.c in Sources */ = {isa = PBXBuildFile; fileRef = 2EF5A501B71E41DB89851175 /* ftotval.c */; };
+		A4F758EC036B4A3AB08DA192 /* ftfstype.c in Sources */ = {isa = PBXBuildFile; fileRef = B5F5A536E66C4E4A862BC3A8 /* ftfstype.c */; };
+		AC3BC4639F754198956FDEFD /* ftpatent.c in Sources */ = {isa = PBXBuildFile; fileRef = 00A9CBD6E5384DE7B19CF84A /* ftpatent.c */; };
+		AD911662D1F7474BAE7D9181 /* ftbdf.c in Sources */ = {isa = PBXBuildFile; fileRef = 67F3B837D8BC45CE8828C7EA /* ftbdf.c */; };
+		B60FB5724D904ABCBC0F7794 /* ftglyph.c in Sources */ = {isa = PBXBuildFile; fileRef = 8D65ABC0F95844D39A0AEFA5 /* ftglyph.c */; };
+		BCB4C8347F9542A6A18BC001 /* ftpfr.c in Sources */ = {isa = PBXBuildFile; fileRef = 19509AE6FAD24AFFB405745E /* ftpfr.c */; };
+		C45CCA54CA2345C69BE7FA20 /* ftsynth.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B40E3EF310E46FDB36D0914 /* ftsynth.c */; };
+		D88976B021054ADF82DD2659 /* ftcid.c in Sources */ = {isa = PBXBuildFile; fileRef = 9EFEA86B066B427FB0BB43FE /* ftcid.c */; };
+		E69026440D8A43549FC73DE9 /* type42.c in Sources */ = {isa = PBXBuildFile; fileRef = 05C00DB4256446978A0182D8 /* type42.c */; };
+		E943A5048DB747FF85042D39 /* winfnt.c in Sources */ = {isa = PBXBuildFile; fileRef = 0B9CBD87AA504B618AE91E19 /* winfnt.c */; };
+		E9B10029A6BF4B4C9084CFDA /* ftmm.c in Sources */ = {isa = PBXBuildFile; fileRef = CA26EB6E2B2B432AAB1D9318 /* ftmm.c */; };
+		EAAFB3BCDE9645CA9666D88C /* ftwinfnt.c in Sources */ = {isa = PBXBuildFile; fileRef = 1678EA3EE7F44E6DB7367258 /* ftwinfnt.c */; };
+		EC66BA772A9B47A08FB6AA57 /* raster.c in Sources */ = {isa = PBXBuildFile; fileRef = 72FF0314C11345A199099EC6 /* raster.c */; };
+		F59D06DED1964E1896A16101 /* ftbbox.c in Sources */ = {isa = PBXBuildFile; fileRef = E00E70EE421143B88B911957 /* ftbbox.c */; };
+		FB81D4A5E43340ED9908A513 /* psaux.c in Sources */ = {isa = PBXBuildFile; fileRef = DC6DE4232D9E4DFEA8C2BA5C /* psaux.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		51B379E849804042A5DBE1DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 514EE8EAA73E4DBEA57CE786 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F7ADA5307CDE47588A5E8F99;
+			remoteInfo = ALL_BUILD;
+		};
+		55A0A6CFF35E4F079289975C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 514EE8EAA73E4DBEA57CE786 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 923B9712EAB64263A8F538FE;
+			remoteInfo = freetype;
+		};
+		808E8987B9334351924D8B70 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 514EE8EAA73E4DBEA57CE786 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F7ADA5307CDE47588A5E8F99;
+			remoteInfo = ALL_BUILD;
+		};
+		8F1C14A2A7AC4ED7A860E335 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 514EE8EAA73E4DBEA57CE786 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D1A4FAD115C2498D9F0E44D4;
+			remoteInfo = ZERO_CHECK;
+		};
+		C4643823839E4D959C2E259E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 514EE8EAA73E4DBEA57CE786 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D1A4FAD115C2498D9F0E44D4;
+			remoteInfo = ZERO_CHECK;
+		};
+		E0A093F97F4F4EE8B6960FD4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 514EE8EAA73E4DBEA57CE786 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D1A4FAD115C2498D9F0E44D4;
+			remoteInfo = ZERO_CHECK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9D32A3E01F54350B006E61F1 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		00A9CBD6E5384DE7B19CF84A /* ftpatent.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ftpatent.c; path = src/base/ftpatent.c; sourceTree = SOURCE_ROOT; };
+		05C00DB4256446978A0182D8 /* type42.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = type42.c; path = src/type42/type42.c; sourceTree = SOURCE_ROOT; };
+		06DB8B524E4C4F10AC97795B /* ftconfig.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ftconfig.h; path = include/freetype/config/ftconfig.h; sourceTree = SOURCE_ROOT; };
+		0B9CBD87AA504B618AE91E19 /* winfnt.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = winfnt.c; path = src/winfonts/winfnt.c; sourceTree = SOURCE_ROOT; };
+		0BD97B10BE3D43F8A794E201 /* tttags.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = tttags.h; path = include/freetype/tttags.h; sourceTree = SOURCE_ROOT; };
+		0CB555EBC5984E07A5AE9B40 /* ftlzw.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ftlzw.h; path = include/freetype/ftlzw.h; sourceTree = SOURCE_ROOT; };
+		0CCF512F92B94DA09D6BAEBB /* ftgxval.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ftgxval.c; path = src/base/ftgxval.c; sourceTree = SOURCE_ROOT; };
+		0F694B356152432281942D67 /* fttrace.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = fttrace.h; path = include/freetype/internal/fttrace.h; sourceTree = SOURCE_ROOT; };
+		0FFB9A36341D4503945C4D07 /* ftbzip2.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ftbzip2.c; path = src/bzip2/ftbzip2.c; sourceTree = SOURCE_ROOT; };
+		1678EA3EE7F44E6DB7367258 /* ftwinfnt.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ftwinfnt.c; path = src/base/ftwinfnt.c; sourceTree = SOURCE_ROOT; };
+		178BC42EA3ED446FB52D72BB /* ftpfr.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ftpfr.h; path = include/freetype/ftpfr.h; sourceTree = SOURCE_ROOT; };
+		18B5DB6860704D76A21E8451 /* fthash.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = fthash.h; path = include/freetype/internal/fthash.h; sourceTree = SOURCE_ROOT; };
+		19509AE6FAD24AFFB405745E /* ftpfr.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ftpfr.c; path = src/base/ftpfr.c; sourceTree = SOURCE_ROOT; };
+		1D515578CA074D89A6CC4197 /* pshints.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = pshints.h; path = include/freetype/internal/pshints.h; sourceTree = SOURCE_ROOT; };
+		1DC0CDAEEDF0445F9DA350C0 /* ftoutln.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ftoutln.h; path = include/freetype/ftoutln.h; sourceTree = SOURCE_ROOT; };
+		1E872FF456A74531A0133C7F /* ftfntfmt.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ftfntfmt.c; path = src/base/ftfntfmt.c; sourceTree = SOURCE_ROOT; };
+		1F18D980A84F4EDC8FCDB0A6 /* ftmoderr.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ftmoderr.h; path = include/freetype/ftmoderr.h; sourceTree = SOURCE_ROOT; };
+		218C5A5905544480A42E090C /* ftsynth.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ftsynth.h; path = include/freetype/ftsynth.h; sourceTree = SOURCE_ROOT; };
+		29D578B3023343B7B6EA666D /* pfr.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = pfr.c; path = src/pfr/pfr.c; sourceTree = SOURCE_ROOT; };
+		2AE8192BD7B24B379A65EA35 /* ftdebug.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ftdebug.c; path = src/base/ftdebug.c; sourceTree = SOURCE_ROOT; };
+		2AF007408B3748E2AC1A9C9A /* ftvalid.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ftvalid.h; path = include/freetype/internal/ftvalid.h; sourceTree = SOURCE_ROOT; };
+		2BC750E8659B4290AAB4FF38 /* ftgasp.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ftgasp.h; path = include/freetype/ftgasp.h; sourceTree = SOURCE_ROOT; };
+		2EF5A501B71E41DB89851175 /* ftotval.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ftotval.c; path = src/base/ftotval.c; sourceTree = SOURCE_ROOT; };
+		375C853584E7485D93139935 /* autofit.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = autofit.c; path = src/autofit/autofit.c; sourceTree = SOURCE_ROOT; };
+		3F1F985EA73E4A4996E7E62F /* ftsnames.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ftsnames.h; path = include/freetype/ftsnames.h; sourceTree = SOURCE_ROOT; };
+		414B09DC44E9481DBD3B6D1A /* pshinter.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = pshinter.c; path = src/pshinter/pshinter.c; sourceTree = SOURCE_ROOT; };
+		42D21A1D35C94B7CB08A8488 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		44DD9361D872488498DB24D7 /* ftdebug.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ftdebug.h; path = include/freetype/internal/ftdebug.h; sourceTree = SOURCE_ROOT; };
+		4749760EF16E4255AB45B643 /* tttypes.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = tttypes.h; path = include/freetype/internal/tttypes.h; sourceTree = SOURCE_ROOT; };
+		49BC7E6D4A8445F9A4DE32D3 /* ftmodule.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ftmodule.h; path = include/freetype/config/ftmodule.h; sourceTree = SOURCE_ROOT; };
+		4F33C7875E2548358FCBCF77 /* pcf.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = pcf.c; path = src/pcf/pcf.c; sourceTree = SOURCE_ROOT; };
+		4F8212AD64954743B35DC4BC /* ftstream.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ftstream.h; path = include/freetype/internal/ftstream.h; sourceTree = SOURCE_ROOT; };
+		50DB710A8CFD4D99B6C0FC60 /* ftotval.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ftotval.h; path = include/freetype/ftotval.h; sourceTree = SOURCE_ROOT; };
+		52B6628124DE41C790D91902 /* ftchapters.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ftchapters.h; path = include/freetype/ftchapters.h; sourceTree = SOURCE_ROOT; };
+		53327C981CD948368E7FAED4 /* ftgzip.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ftgzip.h; path = include/freetype/ftgzip.h; sourceTree = SOURCE_ROOT; };
+		549FEEEC51964117B772AD18 /* smooth.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = smooth.c; path = src/smooth/smooth.c; sourceTree = SOURCE_ROOT; };
+		56CB2CA36FD04469803E47FA /* ftpic.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ftpic.h; path = include/freetype/internal/ftpic.h; sourceTree = SOURCE_ROOT; };
+		5713185CD9EB4DD48DBDC388 /* ftcalc.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ftcalc.h; path = include/freetype/internal/ftcalc.h; sourceTree = SOURCE_ROOT; };
+		60C6582AD10844BFBED51DA1 /* ftrender.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ftrender.h; path = include/freetype/ftrender.h; sourceTree = SOURCE_ROOT; };
+		643CD3DFBEB5493CB0C0CAEE /* ftimage.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ftimage.h; path = include/freetype/ftimage.h; sourceTree = SOURCE_ROOT; };
+		64B406F7327D46509D69948D /* fttypes.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = fttypes.h; path = include/freetype/fttypes.h; sourceTree = SOURCE_ROOT; };
+		64DA83756B5C4BA78826FA2F /* ftgloadr.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ftgloadr.h; path = include/freetype/internal/ftgloadr.h; sourceTree = SOURCE_ROOT; };
+		66CD48E2B05B4A80AFA6EDA0 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		67F3B837D8BC45CE8828C7EA /* ftbdf.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ftbdf.c; path = src/base/ftbdf.c; sourceTree = SOURCE_ROOT; };
+		6C26767B554443DEB4CF6776 /* ftheader.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ftheader.h; path = include/freetype/config/ftheader.h; sourceTree = SOURCE_ROOT; };
+		6C849E1D3DBE452CBA65813C /* type1cid.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = type1cid.c; path = src/cid/type1cid.c; sourceTree = SOURCE_ROOT; };
+		6E6EC6BC85664FB195462C6A /* t1types.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = t1types.h; path = include/freetype/internal/t1types.h; sourceTree = SOURCE_ROOT; };
+		6E8CD985F1224293BFB47B1A /* ftcache.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ftcache.c; path = src/cache/ftcache.c; sourceTree = SOURCE_ROOT; };
+		72FF0314C11345A199099EC6 /* raster.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = raster.c; path = src/raster/raster.c; sourceTree = SOURCE_ROOT; };
+		7542DAD7B532485BB4F77556 /* fttrigon.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = fttrigon.h; path = include/freetype/fttrigon.h; sourceTree = SOURCE_ROOT; };
+		7613CCE98F95472FB9BCD4FC /* ftttdrv.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ftttdrv.h; path = include/freetype/ftttdrv.h; sourceTree = SOURCE_ROOT; };
+		778002B687A74196BC3EFB65 /* ftdriver.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ftdriver.h; path = include/freetype/internal/ftdriver.h; sourceTree = SOURCE_ROOT; };
+		7A2913BF40CB40F384EA8065 /* ftbase.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ftbase.c; path = src/base/ftbase.c; sourceTree = SOURCE_ROOT; };
+		7AFC1A54019C45449E2B243C /* fttype1.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = fttype1.c; path = src/base/fttype1.c; sourceTree = SOURCE_ROOT; };
+		7B40E3EF310E46FDB36D0914 /* ftsynth.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ftsynth.c; path = src/base/ftsynth.c; sourceTree = SOURCE_ROOT; };
+		7BA9A7AE2BF549C49ABE34BE /* ftgasp.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ftgasp.c; path = src/base/ftgasp.c; sourceTree = SOURCE_ROOT; };
+		7F3DE6AD08B94EA4A1029502 /* bdf.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = bdf.c; path = src/bdf/bdf.c; sourceTree = SOURCE_ROOT; };
+		824E36893C1349508DD7D2C9 /* ttnameid.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ttnameid.h; path = include/freetype/ttnameid.h; sourceTree = SOURCE_ROOT; };
+		882F01192C97472BAB5EA122 /* ftgzip.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ftgzip.c; path = src/gzip/ftgzip.c; sourceTree = SOURCE_ROOT; };
+		887342F5974340A2B7D8C47A /* tttables.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = tttables.h; path = include/freetype/tttables.h; sourceTree = SOURCE_ROOT; };
+		89B727746C174EBCAF3E67CD /* ftmm.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ftmm.h; path = include/freetype/ftmm.h; sourceTree = SOURCE_ROOT; };
+		8B40BA30E06348CFB3B64123 /* ftadvanc.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ftadvanc.h; path = include/freetype/ftadvanc.h; sourceTree = SOURCE_ROOT; };
+		8D65ABC0F95844D39A0AEFA5 /* ftglyph.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ftglyph.c; path = src/base/ftglyph.c; sourceTree = SOURCE_ROOT; };
+		8F01945232EC4A6DB4629F46 /* ftbzip2.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ftbzip2.h; path = include/freetype/ftbzip2.h; sourceTree = SOURCE_ROOT; };
+		92ED520916D74B69A1A98D41 /* ftsystem.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ftsystem.h; path = include/freetype/ftsystem.h; sourceTree = SOURCE_ROOT; };
+		93B5DA1562E64A1E99C2DE1F /* psaux.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = psaux.h; path = include/freetype/internal/psaux.h; sourceTree = SOURCE_ROOT; };
+		94D32234AC4A40299B59A98B /* ftrfork.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ftrfork.h; path = include/freetype/internal/ftrfork.h; sourceTree = SOURCE_ROOT; };
+		99D7AE7C013C4A7580373BF6 /* ftautoh.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ftautoh.h; path = include/freetype/ftautoh.h; sourceTree = SOURCE_ROOT; };
+		99EBE4080D8E4570BC765953 /* ftinit.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ftinit.c; path = src/base/ftinit.c; sourceTree = SOURCE_ROOT; };
+		9C7035E467F24276BAA49DB6 /* sfnt.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = sfnt.h; path = include/freetype/internal/sfnt.h; sourceTree = SOURCE_ROOT; };
+		9D32A3E21F54350B006E61F1 /* libfreetypeIOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libfreetypeIOS.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EFEA86B066B427FB0BB43FE /* ftcid.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ftcid.c; path = src/base/ftcid.c; sourceTree = SOURCE_ROOT; };
+		9FBB66AFF7B6493D93B8F675 /* ftobjs.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ftobjs.h; path = include/freetype/internal/ftobjs.h; sourceTree = SOURCE_ROOT; };
+		A1BDDA98790B4D2788EDF2D3 /* ftbitmap.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ftbitmap.h; path = include/freetype/ftbitmap.h; sourceTree = SOURCE_ROOT; };
+		A53A740FFFDC42A4A94EDC3A /* ftstroke.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ftstroke.c; path = src/base/ftstroke.c; sourceTree = SOURCE_ROOT; };
+		A61C8B8BF7004C449EBD69B9 /* ftlcdfil.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ftlcdfil.h; path = include/freetype/ftlcdfil.h; sourceTree = SOURCE_ROOT; };
+		AAEFEACD6BDE400EA99ED303 /* ftwinfnt.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ftwinfnt.h; path = include/freetype/ftwinfnt.h; sourceTree = SOURCE_ROOT; };
+		ABC5216D19B7405781E12E32 /* ftmodapi.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ftmodapi.h; path = include/freetype/ftmodapi.h; sourceTree = SOURCE_ROOT; };
+		AE320231ABD94330AB979F3E /* ftsizes.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ftsizes.h; path = include/freetype/ftsizes.h; sourceTree = SOURCE_ROOT; };
+		AEC642A691464DB8821F1AC5 /* truetype.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = truetype.c; path = src/truetype/truetype.c; sourceTree = SOURCE_ROOT; };
+		B5F5A536E66C4E4A862BC3A8 /* ftfstype.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ftfstype.c; path = src/base/ftfstype.c; sourceTree = SOURCE_ROOT; };
+		B8C35724DB8E4197ABCEDFE8 /* ftbitmap.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ftbitmap.c; path = src/base/ftbitmap.c; sourceTree = SOURCE_ROOT; };
+		BA07C350CC44462A93250FA2 /* ftcid.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ftcid.h; path = include/freetype/ftcid.h; sourceTree = SOURCE_ROOT; };
+		BA14F0D05BD04D988792C9A1 /* ftmemory.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ftmemory.h; path = include/freetype/internal/ftmemory.h; sourceTree = SOURCE_ROOT; };
+		BB7040595C7740A2B74E1359 /* ft2build.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ft2build.h; path = include/ft2build.h; sourceTree = SOURCE_ROOT; };
+		BBD21F5D98F14A35982B427D /* ftbdf.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ftbdf.h; path = include/freetype/ftbdf.h; sourceTree = SOURCE_ROOT; };
+		BC2277C56A1A48D894798237 /* fterrors.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = fterrors.h; path = include/freetype/fterrors.h; sourceTree = SOURCE_ROOT; };
+		BE7DBFCEF1914BCB9E7A0598 /* ftlzw.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ftlzw.c; path = src/lzw/ftlzw.c; sourceTree = SOURCE_ROOT; };
+		BECFBDC52FBC415D9536D3EE /* sfnt.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = sfnt.c; path = src/sfnt/sfnt.c; sourceTree = SOURCE_ROOT; };
+		BFE9AD189BAF4F0E9D3F032B /* ftsystem.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ftsystem.c; path = src/base/ftsystem.c; sourceTree = SOURCE_ROOT; };
+		C12E00D64E964A709D5AD64A /* ftstdlib.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ftstdlib.h; path = include/freetype/config/ftstdlib.h; sourceTree = SOURCE_ROOT; };
+		C254534AA696462EB55EBC72 /* cff.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = cff.c; path = src/cff/cff.c; sourceTree = SOURCE_ROOT; };
+		C28079A1F5C243209CE662D0 /* ftcffdrv.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ftcffdrv.h; path = include/freetype/ftcffdrv.h; sourceTree = SOURCE_ROOT; };
+		C390A91730AA4662A0AA97FF /* ftmac.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ftmac.h; path = include/freetype/ftmac.h; sourceTree = SOURCE_ROOT; };
+		C53BCED2644749A59DB59406 /* internal.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = internal.h; path = include/freetype/internal/internal.h; sourceTree = SOURCE_ROOT; };
+		C80A9EF8CD504AE8BE685D05 /* ftincrem.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ftincrem.h; path = include/freetype/ftincrem.h; sourceTree = SOURCE_ROOT; };
+		C952FC202D294E1D8B6BF41A /* libfreetyped.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libfreetyped.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA26EB6E2B2B432AAB1D9318 /* ftmm.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ftmm.c; path = src/base/ftmm.c; sourceTree = SOURCE_ROOT; };
+		CA7166D24534489B8EA858A0 /* psnames.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = psnames.c; path = src/psnames/psnames.c; sourceTree = SOURCE_ROOT; };
+		CC29E0E7951743968131F701 /* type1.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = type1.c; path = src/type1/type1.c; sourceTree = SOURCE_ROOT; };
+		CFF78EC9558E468EB723FFA6 /* ftcache.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ftcache.h; path = include/freetype/ftcache.h; sourceTree = SOURCE_ROOT; };
+		D02955E8ABD24DD68092808F /* ftoption.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ftoption.h; path = include/freetype/config/ftoption.h; sourceTree = SOURCE_ROOT; };
+		D428E22EE15447F0BC63564E /* freetype.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = freetype.h; path = include/freetype/freetype.h; sourceTree = SOURCE_ROOT; };
+		D4AD94D1014B4518B425E58F /* ftstroke.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ftstroke.h; path = include/freetype/ftstroke.h; sourceTree = SOURCE_ROOT; };
+		D64F4C971F514496976B1362 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		DC6DE4232D9E4DFEA8C2BA5C /* psaux.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = psaux.c; path = src/psaux/psaux.c; sourceTree = SOURCE_ROOT; };
+		DC75276968FC40F2A454B723 /* t1tables.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = t1tables.h; path = include/freetype/t1tables.h; sourceTree = SOURCE_ROOT; };
+		DD641BB2D25848F4B03DA2F5 /* ttunpat.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ttunpat.h; path = include/freetype/ttunpat.h; sourceTree = SOURCE_ROOT; };
+		DD915025B5C741BF99F73548 /* ftpcfdrv.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ftpcfdrv.h; path = include/freetype/ftpcfdrv.h; sourceTree = SOURCE_ROOT; };
+		E00E70EE421143B88B911957 /* ftbbox.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ftbbox.c; path = src/base/ftbbox.c; sourceTree = SOURCE_ROOT; };
+		E1BB65BE3F364801AD21F83B /* ftlcdfil.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ftlcdfil.c; path = src/base/ftlcdfil.c; sourceTree = SOURCE_ROOT; };
+		E1E69927129143E4A4C38200 /* fterrdef.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = fterrdef.h; path = include/freetype/fterrdef.h; sourceTree = SOURCE_ROOT; };
+		E363C5BC8D674325A0508212 /* autohint.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = autohint.h; path = include/freetype/internal/autohint.h; sourceTree = SOURCE_ROOT; };
+		E505C05F07BA43E0940E8DB0 /* ftglyph.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ftglyph.h; path = include/freetype/ftglyph.h; sourceTree = SOURCE_ROOT; };
+		F25393693A2848CCB5017AAB /* ftfntfmt.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ftfntfmt.h; path = include/freetype/ftfntfmt.h; sourceTree = SOURCE_ROOT; };
+		F3E11701941B45539B230B78 /* ftbbox.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ftbbox.h; path = include/freetype/ftbbox.h; sourceTree = SOURCE_ROOT; };
+		F47FA8A5A2AF4A088548E7BE /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		F8836FE00A714D2692162AFC /* ftgxval.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ftgxval.h; path = include/freetype/ftgxval.h; sourceTree = SOURCE_ROOT; };
+		FC04FCC0FD294EA3A839AD07 /* ftserv.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ftserv.h; path = include/freetype/internal/ftserv.h; sourceTree = SOURCE_ROOT; };
+		FE4D87E7C3DB424D9235D9B2 /* ftlist.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ftlist.h; path = include/freetype/ftlist.h; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9D32A3DF1F54350B006E61F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		143E8A4DFB214B1ABF345DF3 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				DB5C106F45774168A00B58DB /* CMake Rules */,
+				42D21A1D35C94B7CB08A8488 /* CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		64DA1401A22347CA9A32F719 /* dist */ = {
+			isa = PBXGroup;
+			children = (
+				9D415982ADF04FEE88D79F01 /* CMake Rules */,
+				D64F4C971F514496976B1362 /* CMakeLists.txt */,
+			);
+			name = dist;
+			sourceTree = "<group>";
+		};
+		6D0055E1BB5544578C07A340 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				375C853584E7485D93139935 /* autofit.c */,
+				7A2913BF40CB40F384EA8065 /* ftbase.c */,
+				E00E70EE421143B88B911957 /* ftbbox.c */,
+				67F3B837D8BC45CE8828C7EA /* ftbdf.c */,
+				B8C35724DB8E4197ABCEDFE8 /* ftbitmap.c */,
+				9EFEA86B066B427FB0BB43FE /* ftcid.c */,
+				2AE8192BD7B24B379A65EA35 /* ftdebug.c */,
+				1E872FF456A74531A0133C7F /* ftfntfmt.c */,
+				B5F5A536E66C4E4A862BC3A8 /* ftfstype.c */,
+				7BA9A7AE2BF549C49ABE34BE /* ftgasp.c */,
+				8D65ABC0F95844D39A0AEFA5 /* ftglyph.c */,
+				0CCF512F92B94DA09D6BAEBB /* ftgxval.c */,
+				99EBE4080D8E4570BC765953 /* ftinit.c */,
+				E1BB65BE3F364801AD21F83B /* ftlcdfil.c */,
+				CA26EB6E2B2B432AAB1D9318 /* ftmm.c */,
+				2EF5A501B71E41DB89851175 /* ftotval.c */,
+				00A9CBD6E5384DE7B19CF84A /* ftpatent.c */,
+				19509AE6FAD24AFFB405745E /* ftpfr.c */,
+				A53A740FFFDC42A4A94EDC3A /* ftstroke.c */,
+				7B40E3EF310E46FDB36D0914 /* ftsynth.c */,
+				BFE9AD189BAF4F0E9D3F032B /* ftsystem.c */,
+				7AFC1A54019C45449E2B243C /* fttype1.c */,
+				1678EA3EE7F44E6DB7367258 /* ftwinfnt.c */,
+				7F3DE6AD08B94EA4A1029502 /* bdf.c */,
+				0FFB9A36341D4503945C4D07 /* ftbzip2.c */,
+				6E8CD985F1224293BFB47B1A /* ftcache.c */,
+				C254534AA696462EB55EBC72 /* cff.c */,
+				6C849E1D3DBE452CBA65813C /* type1cid.c */,
+				882F01192C97472BAB5EA122 /* ftgzip.c */,
+				BE7DBFCEF1914BCB9E7A0598 /* ftlzw.c */,
+				4F33C7875E2548358FCBCF77 /* pcf.c */,
+				29D578B3023343B7B6EA666D /* pfr.c */,
+				DC6DE4232D9E4DFEA8C2BA5C /* psaux.c */,
+				414B09DC44E9481DBD3B6D1A /* pshinter.c */,
+				CA7166D24534489B8EA858A0 /* psnames.c */,
+				72FF0314C11345A199099EC6 /* raster.c */,
+				BECFBDC52FBC415D9536D3EE /* sfnt.c */,
+				549FEEEC51964117B772AD18 /* smooth.c */,
+				AEC642A691464DB8821F1AC5 /* truetype.c */,
+				CC29E0E7951743968131F701 /* type1.c */,
+				05C00DB4256446978A0182D8 /* type42.c */,
+				0B9CBD87AA504B618AE91E19 /* winfnt.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		953AAD4BD24746E6B4FB6D4B = {
+			isa = PBXGroup;
+			children = (
+				64DA1401A22347CA9A32F719 /* dist */,
+				D5FCD5730E244E8F89EACF83 /* freetype */,
+				143E8A4DFB214B1ABF345DF3 /* ALL_BUILD */,
+				B46F0235C5584780ABA4D754 /* ZERO_CHECK */,
+				9D32A3E31F54350B006E61F1 /* freetypeIOS */,
+				B50A443D58274B8EB869C1AA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9D32A3E31F54350B006E61F1 /* freetypeIOS */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = freetypeIOS;
+			path = Build/XCode/freetypeIOS;
+			sourceTree = "<group>";
+		};
+		9D415982ADF04FEE88D79F01 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		B46F0235C5584780ABA4D754 /* ZERO_CHECK */ = {
+			isa = PBXGroup;
+			children = (
+				E72188D19E614F10B930746F /* CMake Rules */,
+				66CD48E2B05B4A80AFA6EDA0 /* CMakeLists.txt */,
+			);
+			name = ZERO_CHECK;
+			sourceTree = "<group>";
+		};
+		B50A443D58274B8EB869C1AA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C952FC202D294E1D8B6BF41A /* libfreetyped.a */,
+				9D32A3E21F54350B006E61F1 /* libfreetypeIOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D5FCD5730E244E8F89EACF83 /* freetype */ = {
+			isa = PBXGroup;
+			children = (
+				FD8C618CB96D4535916835BF /* Header Files */,
+				6D0055E1BB5544578C07A340 /* Source Files */,
+				F47FA8A5A2AF4A088548E7BE /* CMakeLists.txt */,
+			);
+			name = freetype;
+			sourceTree = "<group>";
+		};
+		DB5C106F45774168A00B58DB /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		E72188D19E614F10B930746F /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		FD8C618CB96D4535916835BF /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				06DB8B524E4C4F10AC97795B /* ftconfig.h */,
+				6C26767B554443DEB4CF6776 /* ftheader.h */,
+				49BC7E6D4A8445F9A4DE32D3 /* ftmodule.h */,
+				D02955E8ABD24DD68092808F /* ftoption.h */,
+				C12E00D64E964A709D5AD64A /* ftstdlib.h */,
+				D428E22EE15447F0BC63564E /* freetype.h */,
+				8B40BA30E06348CFB3B64123 /* ftadvanc.h */,
+				99D7AE7C013C4A7580373BF6 /* ftautoh.h */,
+				F3E11701941B45539B230B78 /* ftbbox.h */,
+				BBD21F5D98F14A35982B427D /* ftbdf.h */,
+				A1BDDA98790B4D2788EDF2D3 /* ftbitmap.h */,
+				8F01945232EC4A6DB4629F46 /* ftbzip2.h */,
+				CFF78EC9558E468EB723FFA6 /* ftcache.h */,
+				C28079A1F5C243209CE662D0 /* ftcffdrv.h */,
+				52B6628124DE41C790D91902 /* ftchapters.h */,
+				BA07C350CC44462A93250FA2 /* ftcid.h */,
+				E1E69927129143E4A4C38200 /* fterrdef.h */,
+				BC2277C56A1A48D894798237 /* fterrors.h */,
+				F25393693A2848CCB5017AAB /* ftfntfmt.h */,
+				2BC750E8659B4290AAB4FF38 /* ftgasp.h */,
+				E505C05F07BA43E0940E8DB0 /* ftglyph.h */,
+				F8836FE00A714D2692162AFC /* ftgxval.h */,
+				53327C981CD948368E7FAED4 /* ftgzip.h */,
+				643CD3DFBEB5493CB0C0CAEE /* ftimage.h */,
+				C80A9EF8CD504AE8BE685D05 /* ftincrem.h */,
+				A61C8B8BF7004C449EBD69B9 /* ftlcdfil.h */,
+				FE4D87E7C3DB424D9235D9B2 /* ftlist.h */,
+				0CB555EBC5984E07A5AE9B40 /* ftlzw.h */,
+				C390A91730AA4662A0AA97FF /* ftmac.h */,
+				89B727746C174EBCAF3E67CD /* ftmm.h */,
+				ABC5216D19B7405781E12E32 /* ftmodapi.h */,
+				1F18D980A84F4EDC8FCDB0A6 /* ftmoderr.h */,
+				50DB710A8CFD4D99B6C0FC60 /* ftotval.h */,
+				1DC0CDAEEDF0445F9DA350C0 /* ftoutln.h */,
+				DD915025B5C741BF99F73548 /* ftpcfdrv.h */,
+				178BC42EA3ED446FB52D72BB /* ftpfr.h */,
+				60C6582AD10844BFBED51DA1 /* ftrender.h */,
+				AE320231ABD94330AB979F3E /* ftsizes.h */,
+				3F1F985EA73E4A4996E7E62F /* ftsnames.h */,
+				D4AD94D1014B4518B425E58F /* ftstroke.h */,
+				218C5A5905544480A42E090C /* ftsynth.h */,
+				92ED520916D74B69A1A98D41 /* ftsystem.h */,
+				7542DAD7B532485BB4F77556 /* fttrigon.h */,
+				7613CCE98F95472FB9BCD4FC /* ftttdrv.h */,
+				64B406F7327D46509D69948D /* fttypes.h */,
+				AAEFEACD6BDE400EA99ED303 /* ftwinfnt.h */,
+				E363C5BC8D674325A0508212 /* autohint.h */,
+				5713185CD9EB4DD48DBDC388 /* ftcalc.h */,
+				44DD9361D872488498DB24D7 /* ftdebug.h */,
+				778002B687A74196BC3EFB65 /* ftdriver.h */,
+				64DA83756B5C4BA78826FA2F /* ftgloadr.h */,
+				18B5DB6860704D76A21E8451 /* fthash.h */,
+				BA14F0D05BD04D988792C9A1 /* ftmemory.h */,
+				9FBB66AFF7B6493D93B8F675 /* ftobjs.h */,
+				56CB2CA36FD04469803E47FA /* ftpic.h */,
+				94D32234AC4A40299B59A98B /* ftrfork.h */,
+				FC04FCC0FD294EA3A839AD07 /* ftserv.h */,
+				4F8212AD64954743B35DC4BC /* ftstream.h */,
+				0F694B356152432281942D67 /* fttrace.h */,
+				2AF007408B3748E2AC1A9C9A /* ftvalid.h */,
+				C53BCED2644749A59DB59406 /* internal.h */,
+				93B5DA1562E64A1E99C2DE1F /* psaux.h */,
+				1D515578CA074D89A6CC4197 /* pshints.h */,
+				9C7035E467F24276BAA49DB6 /* sfnt.h */,
+				6E6EC6BC85664FB195462C6A /* t1types.h */,
+				4749760EF16E4255AB45B643 /* tttypes.h */,
+				DC75276968FC40F2A454B723 /* t1tables.h */,
+				824E36893C1349508DD7D2C9 /* ttnameid.h */,
+				887342F5974340A2B7D8C47A /* tttables.h */,
+				0BD97B10BE3D43F8A794E201 /* tttags.h */,
+				DD641BB2D25848F4B03DA2F5 /* ttunpat.h */,
+				BB7040595C7740A2B74E1359 /* ft2build.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		923B9712EAB64263A8F538FE /* freetype */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61812ABD592C46F7BC885A38 /* Build configuration list for PBXNativeTarget "freetype" */;
+			buildPhases = (
+				16900DF4C9DC458294459357 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5DFC22A57BBB4C259C72E16C /* PBXTargetDependency */,
+			);
+			name = freetype;
+			productName = freetype;
+			productReference = C952FC202D294E1D8B6BF41A /* libfreetyped.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		9D32A3E11F54350B006E61F1 /* freetypeIOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D32A3EC1F54350B006E61F1 /* Build configuration list for PBXNativeTarget "freetypeIOS" */;
+			buildPhases = (
+				9D32A3DE1F54350B006E61F1 /* Sources */,
+				9D32A3DF1F54350B006E61F1 /* Frameworks */,
+				9D32A3E01F54350B006E61F1 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = freetypeIOS;
+			productName = freetypeIOS;
+			productReference = 9D32A3E21F54350B006E61F1 /* libfreetypeIOS.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		514EE8EAA73E4DBEA57CE786 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 0830;
+				TargetAttributes = {
+					9D32A3E11F54350B006E61F1 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = AQNAZWX3GB;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 8480B86BF5B740F0B7644264 /* Build configuration list for PBXProject "freetype" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 953AAD4BD24746E6B4FB6D4B;
+			projectDirPath = ../../;
+			projectRoot = "";
+			targets = (
+				F7ADA5307CDE47588A5E8F99 /* ALL_BUILD */,
+				D1A4FAD115C2498D9F0E44D4 /* ZERO_CHECK */,
+				203E92CDC4A94D6DBA6CD85D /* dist */,
+				DC906366CFD2462E8EEB7FA6 /* install */,
+				37D6E98FCB7E47FA909A2193 /* package */,
+				923B9712EAB64263A8F538FE /* freetype */,
+				9D32A3E11F54350B006E61F1 /* freetypeIOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4A78C625FB7145E8AC291EA3 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			outputPaths = (
+				/Users/m_lukyanov/GameDev/LIBS/freetype/Build/XCode/CMakeFiles/dist,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/m_lukyanov/GameDev/LIBS/freetype/Build/XCode -f /Users/m_lukyanov/GameDev/LIBS/freetype/Build/XCode/CMakeScripts/dist_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		51FB37F2F5F9457B945FF5D6 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			outputPaths = (
+				/Users/m_lukyanov/GameDev/LIBS/freetype/Build/XCode/CMakeFiles/ZERO_CHECK,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/m_lukyanov/GameDev/LIBS/freetype/Build/XCode -f /Users/m_lukyanov/GameDev/LIBS/freetype/Build/XCode/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		6730409B02D8488B99DD5DE8 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/m_lukyanov/GameDev/LIBS/freetype/Build/XCode -f /Users/m_lukyanov/GameDev/LIBS/freetype/Build/XCode/CMakeScripts/install_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		98911BF7E183408D9DA3374B /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/m_lukyanov/GameDev/LIBS/freetype/Build/XCode -f /Users/m_lukyanov/GameDev/LIBS/freetype/Build/XCode/CMakeScripts/package_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		A1227875B46747FE98637771 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			outputPaths = (
+				/Users/m_lukyanov/GameDev/LIBS/freetype/Build/XCode/CMakeFiles/ALL_BUILD,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/m_lukyanov/GameDev/LIBS/freetype/Build/XCode -f /Users/m_lukyanov/GameDev/LIBS/freetype/Build/XCode/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		16900DF4C9DC458294459357 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58E9F3A62A064C48AA579344 /* autofit.c in Sources */,
+				12FB2C0074B74A79A1EE0B36 /* ftbase.c in Sources */,
+				F59D06DED1964E1896A16101 /* ftbbox.c in Sources */,
+				AD911662D1F7474BAE7D9181 /* ftbdf.c in Sources */,
+				2AA26E90700348008FA2363D /* ftbitmap.c in Sources */,
+				D88976B021054ADF82DD2659 /* ftcid.c in Sources */,
+				4144813841FC414EA20C8ACB /* ftdebug.c in Sources */,
+				865107CD14F7459E916B64D8 /* ftfntfmt.c in Sources */,
+				A4F758EC036B4A3AB08DA192 /* ftfstype.c in Sources */,
+				5845F9217BE9428D9CEA1099 /* ftgasp.c in Sources */,
+				B60FB5724D904ABCBC0F7794 /* ftglyph.c in Sources */,
+				83CAB96BF7284C8AAF5AF42D /* ftgxval.c in Sources */,
+				258899F461AF4F4796EC263B /* ftinit.c in Sources */,
+				11BCB7C3EFFB4F229BA0D526 /* ftlcdfil.c in Sources */,
+				E9B10029A6BF4B4C9084CFDA /* ftmm.c in Sources */,
+				A2938022D9B74297B024571A /* ftotval.c in Sources */,
+				AC3BC4639F754198956FDEFD /* ftpatent.c in Sources */,
+				BCB4C8347F9542A6A18BC001 /* ftpfr.c in Sources */,
+				130950E139EA43E5AB337224 /* ftstroke.c in Sources */,
+				C45CCA54CA2345C69BE7FA20 /* ftsynth.c in Sources */,
+				8E914672E1F44A2C93A80637 /* ftsystem.c in Sources */,
+				8878487732754086A6B5C3CA /* fttype1.c in Sources */,
+				EAAFB3BCDE9645CA9666D88C /* ftwinfnt.c in Sources */,
+				5A75CBF5EA9C44C5AA0D2C7F /* bdf.c in Sources */,
+				135657F841A84604BA69C752 /* ftbzip2.c in Sources */,
+				3F6BA54492724E3BAD99D911 /* ftcache.c in Sources */,
+				3B0A771D96264B3D81F90A5B /* cff.c in Sources */,
+				718DFA5DB7AD4D89960DA460 /* type1cid.c in Sources */,
+				91C71F35148A4B8F813E16BB /* ftgzip.c in Sources */,
+				26F3ECC3DC79456A9A104ABB /* ftlzw.c in Sources */,
+				3A42CDFA0B504DD98FF0137F /* pcf.c in Sources */,
+				14465C2174284CDC8AC271AB /* pfr.c in Sources */,
+				FB81D4A5E43340ED9908A513 /* psaux.c in Sources */,
+				1C30498586AB4B34BE35E9FA /* pshinter.c in Sources */,
+				4B57B2DDEB3D4E96908E795B /* psnames.c in Sources */,
+				EC66BA772A9B47A08FB6AA57 /* raster.c in Sources */,
+				34F43196214F415489251CB1 /* sfnt.c in Sources */,
+				96ADC3C3AE7943C49ABEAA9D /* smooth.c in Sources */,
+				360A0F4DD3BC4F688CF2AC9F /* truetype.c in Sources */,
+				1A0FD91DD89449059CFEA159 /* type1.c in Sources */,
+				E69026440D8A43549FC73DE9 /* type42.c in Sources */,
+				E943A5048DB747FF85042D39 /* winfnt.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D32A3DE1F54350B006E61F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D32A3ED1F5435CF006E61F1 /* autofit.c in Sources */,
+				9D32A3EE1F5435CF006E61F1 /* ftbase.c in Sources */,
+				9D32A3EF1F5435CF006E61F1 /* ftbbox.c in Sources */,
+				9D32A3F01F5435CF006E61F1 /* ftbdf.c in Sources */,
+				9D32A3F11F5435CF006E61F1 /* ftbitmap.c in Sources */,
+				9D32A3F21F5435CF006E61F1 /* ftcid.c in Sources */,
+				9D32A3F31F5435CF006E61F1 /* ftdebug.c in Sources */,
+				9D32A3F41F5435CF006E61F1 /* ftfntfmt.c in Sources */,
+				9D32A3F51F5435CF006E61F1 /* ftfstype.c in Sources */,
+				9D32A3F61F5435CF006E61F1 /* ftgasp.c in Sources */,
+				9D32A3F71F5435CF006E61F1 /* ftglyph.c in Sources */,
+				9D32A3F81F5435CF006E61F1 /* ftgxval.c in Sources */,
+				9D32A3F91F5435CF006E61F1 /* ftinit.c in Sources */,
+				9D32A3FA1F5435CF006E61F1 /* ftlcdfil.c in Sources */,
+				9D32A3FB1F5435CF006E61F1 /* ftmm.c in Sources */,
+				9D32A3FC1F5435CF006E61F1 /* ftotval.c in Sources */,
+				9D32A3FD1F5435CF006E61F1 /* ftpatent.c in Sources */,
+				9D32A3FE1F5435CF006E61F1 /* ftpfr.c in Sources */,
+				9D32A3FF1F5435CF006E61F1 /* ftstroke.c in Sources */,
+				9D32A4001F5435CF006E61F1 /* ftsynth.c in Sources */,
+				9D32A4011F5435CF006E61F1 /* ftsystem.c in Sources */,
+				9D32A4021F5435CF006E61F1 /* fttype1.c in Sources */,
+				9D32A4031F5435CF006E61F1 /* ftwinfnt.c in Sources */,
+				9D32A4041F5435CF006E61F1 /* bdf.c in Sources */,
+				9D32A4051F5435CF006E61F1 /* ftbzip2.c in Sources */,
+				9D32A4061F5435CF006E61F1 /* ftcache.c in Sources */,
+				9D32A4071F5435CF006E61F1 /* cff.c in Sources */,
+				9D32A4081F5435CF006E61F1 /* type1cid.c in Sources */,
+				9D32A4091F5435CF006E61F1 /* ftgzip.c in Sources */,
+				9D32A40A1F5435CF006E61F1 /* ftlzw.c in Sources */,
+				9D32A40B1F5435CF006E61F1 /* pcf.c in Sources */,
+				9D32A40C1F5435CF006E61F1 /* pfr.c in Sources */,
+				9D32A40D1F5435CF006E61F1 /* psaux.c in Sources */,
+				9D32A40E1F5435CF006E61F1 /* pshinter.c in Sources */,
+				9D32A40F1F5435CF006E61F1 /* psnames.c in Sources */,
+				9D32A4101F5435CF006E61F1 /* raster.c in Sources */,
+				9D32A4111F5435CF006E61F1 /* sfnt.c in Sources */,
+				9D32A4121F5435CF006E61F1 /* smooth.c in Sources */,
+				9D32A4131F5435CF006E61F1 /* truetype.c in Sources */,
+				9D32A4141F5435CF006E61F1 /* type1.c in Sources */,
+				9D32A4151F5435CF006E61F1 /* type42.c in Sources */,
+				9D32A4161F5435CF006E61F1 /* winfnt.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		127F2019DAEF44BAAC9C39CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F7ADA5307CDE47588A5E8F99 /* ALL_BUILD */;
+			targetProxy = 51B379E849804042A5DBE1DB /* PBXContainerItemProxy */;
+		};
+		2394EC0373564965B17FEE2B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 923B9712EAB64263A8F538FE /* freetype */;
+			targetProxy = 55A0A6CFF35E4F079289975C /* PBXContainerItemProxy */;
+		};
+		354A77E19920439B9874B873 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D1A4FAD115C2498D9F0E44D4 /* ZERO_CHECK */;
+			targetProxy = C4643823839E4D959C2E259E /* PBXContainerItemProxy */;
+		};
+		5DFC22A57BBB4C259C72E16C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D1A4FAD115C2498D9F0E44D4 /* ZERO_CHECK */;
+			targetProxy = 8F1C14A2A7AC4ED7A860E335 /* PBXContainerItemProxy */;
+		};
+		DC728CE8492B4D44B5003F59 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D1A4FAD115C2498D9F0E44D4 /* ZERO_CHECK */;
+			targetProxy = E0A093F97F4F4EE8B6960FD4 /* PBXContainerItemProxy */;
+		};
+		E06B7E76DC754B5489CEA4D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F7ADA5307CDE47588A5E8F99 /* ALL_BUILD */;
+			targetProxy = 808E8987B9334351924D8B70 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0F5E093F6CE4443FBB7C06A9 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk;
+				SYMROOT = /Users/m_lukyanov/GameDev/LIBS/freetype/Build/XCode/build;
+			};
+			name = RelWithDebInfo;
+		};
+		19EF8FE6EBCC481EB3D12ED2 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					FT2_BUILD_LIBRARY,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/m_lukyanov/GameDev/LIBS/freetype/Build/XCode/include,
+					/Users/m_lukyanov/GameDev/LIBS/freetype/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = dist;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/m_lukyanov/GameDev/LIBS/freetype/Build/XCode;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		1E5EA2E5EF0C45EDAD459367 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					FT2_BUILD_LIBRARY,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/m_lukyanov/GameDev/LIBS/freetype/Build/XCode/include,
+					/Users/m_lukyanov/GameDev/LIBS/freetype/include,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "    -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = freetype;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/m_lukyanov/GameDev/LIBS/freetype/Build/XCode;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		2F3988A1C66C49BFB0AAE9A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/m_lukyanov/GameDev/LIBS/freetype/Build/XCode/include,
+					/Users/m_lukyanov/GameDev/LIBS/freetype/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/m_lukyanov/GameDev/LIBS/freetype/Build/XCode;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		30A1F197369744B09EE2DACA /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/m_lukyanov/GameDev/LIBS/freetype/Build/XCode/include,
+					/Users/m_lukyanov/GameDev/LIBS/freetype/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/m_lukyanov/GameDev/LIBS/freetype/Build/XCode;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		369C51CCC5B64073958B00F4 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/m_lukyanov/GameDev/LIBS/freetype/Build/XCode/include,
+					/Users/m_lukyanov/GameDev/LIBS/freetype/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/m_lukyanov/GameDev/LIBS/freetype/Build/XCode;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		560DAE6A6FB143A1A64F4894 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					FT2_BUILD_LIBRARY,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/m_lukyanov/GameDev/LIBS/freetype/Build/XCode/include,
+					/Users/m_lukyanov/GameDev/LIBS/freetype/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = dist;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/m_lukyanov/GameDev/LIBS/freetype/Build/XCode;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		5BFA6DB26686491CA731E003 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					FT2_BUILD_LIBRARY,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/m_lukyanov/GameDev/LIBS/freetype/Build/XCode/include,
+					/Users/m_lukyanov/GameDev/LIBS/freetype/include,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "    -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = freetype;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/m_lukyanov/GameDev/LIBS/freetype/Build/XCode;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		5FAB2F83141249E38A116A18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk;
+				SYMROOT = /Users/m_lukyanov/GameDev/LIBS/freetype/Build/XCode/build;
+			};
+			name = Debug;
+		};
+		60E37313FCAE402585849150 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/m_lukyanov/GameDev/LIBS/freetype/Build/XCode/include,
+					/Users/m_lukyanov/GameDev/LIBS/freetype/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/m_lukyanov/GameDev/LIBS/freetype/Build/XCode;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		6CCF7E05F780400FB9B429C5 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					FT2_BUILD_LIBRARY,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/m_lukyanov/GameDev/LIBS/freetype/Build/XCode/include,
+					/Users/m_lukyanov/GameDev/LIBS/freetype/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = dist;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/m_lukyanov/GameDev/LIBS/freetype/Build/XCode;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		7B421E508ED143EDA4C597B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/m_lukyanov/GameDev/LIBS/freetype/Build/XCode/include,
+					/Users/m_lukyanov/GameDev/LIBS/freetype/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/m_lukyanov/GameDev/LIBS/freetype/Build/XCode;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		89C2E0D18F314B308C9BDB6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/m_lukyanov/GameDev/LIBS/freetype/Build/XCode/include,
+					/Users/m_lukyanov/GameDev/LIBS/freetype/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/m_lukyanov/GameDev/LIBS/freetype/Build/XCode;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		99E46CFE5B424385AC7CA457 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					FT2_BUILD_LIBRARY,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/m_lukyanov/GameDev/LIBS/freetype/Build/XCode/include,
+					/Users/m_lukyanov/GameDev/LIBS/freetype/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = dist;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/m_lukyanov/GameDev/LIBS/freetype/Build/XCode;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		9C9C014E9ADC42B7811380D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/m_lukyanov/GameDev/LIBS/freetype/Build/XCode/include,
+					/Users/m_lukyanov/GameDev/LIBS/freetype/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/m_lukyanov/GameDev/LIBS/freetype/Build/XCode;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		9D32A3E81F54350B006E61F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = AQNAZWX3GB;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					FT2_BUILD_LIBRARY,
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					/Users/m_lukyanov/GameDev/LIBS/freetype/Build/XCode/include,
+					/Users/m_lukyanov/GameDev/LIBS/freetype/include,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		9D32A3E91F54350B006E61F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = AQNAZWX3GB;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					FT2_BUILD_LIBRARY,
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					/Users/m_lukyanov/GameDev/LIBS/freetype/Build/XCode/include,
+					/Users/m_lukyanov/GameDev/LIBS/freetype/include,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CFLAGS = "-DNDEBUG";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9D32A3EA1F54350B006E61F1 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = AQNAZWX3GB;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					FT2_BUILD_LIBRARY,
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					/Users/m_lukyanov/GameDev/LIBS/freetype/Build/XCode/include,
+					/Users/m_lukyanov/GameDev/LIBS/freetype/include,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CFLAGS = "-DNDEBUG";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = MinSizeRel;
+		};
+		9D32A3EB1F54350B006E61F1 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = AQNAZWX3GB;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					FT2_BUILD_LIBRARY,
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					/Users/m_lukyanov/GameDev/LIBS/freetype/Build/XCode/include,
+					/Users/m_lukyanov/GameDev/LIBS/freetype/include,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CFLAGS = "-DNDEBUG";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = RelWithDebInfo;
+		};
+		A4D70D56494C44A6BD6DF0B0 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/m_lukyanov/GameDev/LIBS/freetype/Build/XCode/include,
+					/Users/m_lukyanov/GameDev/LIBS/freetype/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/m_lukyanov/GameDev/LIBS/freetype/Build/XCode;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		B16EEAF07B604D41BE012FA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/m_lukyanov/GameDev/LIBS/freetype/Build/XCode/include,
+					/Users/m_lukyanov/GameDev/LIBS/freetype/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/m_lukyanov/GameDev/LIBS/freetype/Build/XCode;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		BEC3EBC849814BA381B83E42 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/m_lukyanov/GameDev/LIBS/freetype/Build/XCode/include,
+					/Users/m_lukyanov/GameDev/LIBS/freetype/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/m_lukyanov/GameDev/LIBS/freetype/Build/XCode;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		C05D7376420045DAB653C408 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					FT2_BUILD_LIBRARY,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/m_lukyanov/GameDev/LIBS/freetype/Build/XCode/include,
+					/Users/m_lukyanov/GameDev/LIBS/freetype/include,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "       -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = freetype;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/m_lukyanov/GameDev/LIBS/freetype/Build/XCode;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		C8B5F73931A64162B6FF1ECA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk;
+				SYMROOT = /Users/m_lukyanov/GameDev/LIBS/freetype/Build/XCode/build;
+			};
+			name = Release;
+		};
+		CB2A447DEB024AA6929825CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/m_lukyanov/GameDev/LIBS/freetype/Build/XCode/include,
+					/Users/m_lukyanov/GameDev/LIBS/freetype/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/m_lukyanov/GameDev/LIBS/freetype/Build/XCode;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		CBE42A3B905E4DD6817FBD5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/m_lukyanov/GameDev/LIBS/freetype/Build/XCode/include,
+					/Users/m_lukyanov/GameDev/LIBS/freetype/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/m_lukyanov/GameDev/LIBS/freetype/Build/XCode;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		DB6BDA721B074287A9CE5016 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/m_lukyanov/GameDev/LIBS/freetype/Build/XCode/include,
+					/Users/m_lukyanov/GameDev/LIBS/freetype/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/m_lukyanov/GameDev/LIBS/freetype/Build/XCode;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		DE089746C261450FA1207950 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					FT2_BUILD_LIBRARY,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/m_lukyanov/GameDev/LIBS/freetype/Build/XCode/include,
+					/Users/m_lukyanov/GameDev/LIBS/freetype/include,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "    ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = freetyped;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/m_lukyanov/GameDev/LIBS/freetype/Build/XCode;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		E69C5DC69ED4496197A2EAB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/m_lukyanov/GameDev/LIBS/freetype/Build/XCode/include,
+					/Users/m_lukyanov/GameDev/LIBS/freetype/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/m_lukyanov/GameDev/LIBS/freetype/Build/XCode;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		EFFB77BCF3604E58A9C76C06 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/m_lukyanov/GameDev/LIBS/freetype/Build/XCode/include,
+					/Users/m_lukyanov/GameDev/LIBS/freetype/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/m_lukyanov/GameDev/LIBS/freetype/Build/XCode;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		F138221C658D4BA0AFDB57C4 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk;
+				SYMROOT = /Users/m_lukyanov/GameDev/LIBS/freetype/Build/XCode/build;
+			};
+			name = MinSizeRel;
+		};
+		F63E0F6DAA8942E6B1D75371 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/m_lukyanov/GameDev/LIBS/freetype/Build/XCode/include,
+					/Users/m_lukyanov/GameDev/LIBS/freetype/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/m_lukyanov/GameDev/LIBS/freetype/Build/XCode;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		21B7C102CA644710BC92C093 /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBE42A3B905E4DD6817FBD5B /* Debug */,
+				CB2A447DEB024AA6929825CD /* Release */,
+				BEC3EBC849814BA381B83E42 /* MinSizeRel */,
+				DB6BDA721B074287A9CE5016 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		493AB200A6CC436295A022CF /* Build configuration list for PBXAggregateTarget "package" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89C2E0D18F314B308C9BDB6F /* Debug */,
+				2F3988A1C66C49BFB0AAE9A0 /* Release */,
+				F63E0F6DAA8942E6B1D75371 /* MinSizeRel */,
+				30A1F197369744B09EE2DACA /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		561C7AFF238B4AD0BA18C578 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B421E508ED143EDA4C597B0 /* Debug */,
+				B16EEAF07B604D41BE012FA6 /* Release */,
+				EFFB77BCF3604E58A9C76C06 /* MinSizeRel */,
+				369C51CCC5B64073958B00F4 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		61812ABD592C46F7BC885A38 /* Build configuration list for PBXNativeTarget "freetype" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE089746C261450FA1207950 /* Debug */,
+				1E5EA2E5EF0C45EDAD459367 /* Release */,
+				5BFA6DB26686491CA731E003 /* MinSizeRel */,
+				C05D7376420045DAB653C408 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8480B86BF5B740F0B7644264 /* Build configuration list for PBXProject "freetype" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FAB2F83141249E38A116A18 /* Debug */,
+				C8B5F73931A64162B6FF1ECA /* Release */,
+				F138221C658D4BA0AFDB57C4 /* MinSizeRel */,
+				0F5E093F6CE4443FBB7C06A9 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8F3ACBBFA4E746EB854DE53A /* Build configuration list for PBXAggregateTarget "dist" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				560DAE6A6FB143A1A64F4894 /* Debug */,
+				99E46CFE5B424385AC7CA457 /* Release */,
+				19EF8FE6EBCC481EB3D12ED2 /* MinSizeRel */,
+				6CCF7E05F780400FB9B429C5 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		9D32A3EC1F54350B006E61F1 /* Build configuration list for PBXNativeTarget "freetypeIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D32A3E81F54350B006E61F1 /* Debug */,
+				9D32A3E91F54350B006E61F1 /* Release */,
+				9D32A3EA1F54350B006E61F1 /* MinSizeRel */,
+				9D32A3EB1F54350B006E61F1 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BB9B3B7C9FF145E0BCEA39D6 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C9C014E9ADC42B7811380D9 /* Debug */,
+				E69C5DC69ED4496197A2EAB3 /* Release */,
+				A4D70D56494C44A6BD6DF0B0 /* MinSizeRel */,
+				60E37313FCAE402585849150 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 514EE8EAA73E4DBEA57CE786 /* Project object */;
+}
